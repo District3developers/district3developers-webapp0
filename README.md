@@ -1,3 +1,26 @@
+
+nomepackage: reactkirupatodolist1
+
+descrizione:
+applicazione CRUD React.js per utilizzare l'API Web, visualizzare e modificare i dati con Router, Axios e Bootstrap <a class="" href="https://bezkoder.com/react-crud-web-api/" target="_blank">tutorial di bezkoder</a> 
+
+
+To run the project:
+
+    Clone this repo
+    Run 
+        npm install
+        npm install bootstrap
+        npm install react-router-dom
+        npm install axios
+        npm start
+
+online demo: http://react-crud-bezkoder1.reabiagioblog.it
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
