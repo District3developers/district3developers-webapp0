@@ -43,8 +43,8 @@ class App extends Component {
     <Router>
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <a href="/tutorials" className="navbar-brand">
-          bezKoder 
+        <a href="http://reabiagioblog.it/react/index_app_demo.html" className="navbar-brand">
+          React demo index
         </a>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
@@ -59,6 +59,17 @@ class App extends Component {
           </li>
         </div>
       </nav>
+
+{/* 
+      <div className="prova">
+        process.env.REACT_APP_WEB_API_BASEURL = {process.env.REACT_APP_WEB_API_BASEURL}
+        process.env.NODE_ENV = {process.env.NODE_ENV}
+      </div>
+      <div className="prova">
+        process.env.REACT_APP_NOT_SECRET_CODE = {process.env.REACT_APP_NOT_SECRET_CODE}
+      </div>
+*/}
+
 
 {/* A JSX comment */}
 {/* si fa riferimeto a dei componneti: TutorialsList, AddTutorial, Tutorial */}

@@ -21,6 +21,7 @@ export default class TutorialsList extends Component {
   }
 
   componentDidMount() {
+    console.log("src/components/tutorials-list.component.js TutorialsList::componentDidMount()");
     this.retrieveTutorials();
   }
 
@@ -33,6 +34,7 @@ export default class TutorialsList extends Component {
   }
 
   retrieveTutorials() {
+    console.log("src/components/tutorials-list.component.js TutorialsList::retrieveTutorials()");
     TutorialDataService.getAll()
       .then(response => {
         this.setState({
@@ -46,6 +48,8 @@ export default class TutorialsList extends Component {
   }
 
   refreshList() {
+    console.log("src/components/tutorials-list.component.js TutorialsList::componentDidMount()");
+
     this.retrieveTutorials();
     this.setState({
       currentTutorial: null,

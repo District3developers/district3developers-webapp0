@@ -1,7 +1,7 @@
 
 //????
 //http-common.js
-//export default axios.create({
+//export default axios.create({ ... }
 import http from "../http-common";
 
 class TutorialDataService {
