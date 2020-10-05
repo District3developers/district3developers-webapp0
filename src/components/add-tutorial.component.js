@@ -5,7 +5,9 @@ import TutorialDataService from "../services/tutorial.service";
 //???
 export default class AddTutorial extends Component {
   constructor(props) {
+
     super(props);
+
     this.onChangeTitle = this.onChangeTitle.bind(this);
     this.onChangeDescription = this.onChangeDescription.bind(this);
     this.saveTutorial = this.saveTutorial.bind(this);
@@ -15,7 +17,7 @@ export default class AddTutorial extends Component {
     this.state = {
       id: null,
       title: "",
-      description: "", 
+      description: "",
       published: false,
 
       submitted: false
@@ -79,38 +81,38 @@ export default class AddTutorial extends Component {
             </button>
           </div>
         ) : (
-          <div>
-            <div className="form-group">
-              <label htmlFor="title">Title</label>
-              <input
-                type="text"
-                className="form-control"
-                id="title"
-                required
-                value={this.state.title}
-                onChange={this.onChangeTitle}
-                name="title"
-              />
-            </div>
+            <div>
+              <div className="form-group">
+                <label htmlFor="title">Title</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="title"
+                  required
+                  value={this.state.title}
+                  onChange={this.onChangeTitle}
+                  name="title"
+                />
+              </div>
 
-            <div className="form-group">
-              <label htmlFor="description">Description</label>
-              <input
-                type="text"
-                className="form-control"
-                id="description"
-                required
-                value={this.state.description}
-                onChange={this.onChangeDescription}
-                name="description"
-              />
-            </div>
+              <div className="form-group">
+                <label htmlFor="description">Description</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="description"
+                  required
+                  value={this.state.description}
+                  onChange={this.onChangeDescription}
+                  name="description"
+                />
+              </div>
 
-            <button onClick={this.saveTutorial} className="btn btn-success">
-              Submit
+              <button onClick={this.saveTutorial} className="btn btn-success">
+                Submit
             </button>
-          </div>
-        )}
+            </div>
+          )}
       </div>
     );
   }
